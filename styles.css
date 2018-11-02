@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Rosario');
+body{
+    padding: 0; margin: 0;
+}
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+.nav{
+    height: 3rem;
+    background: rgba(0,0,0,0.5);
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 2rem;
+}
+.nav ul li{
+    text-decoration: none;
+    width: 100px;
+    height: 100%;
+    text-align: -webkit-center;
+    padding-top: 1rem;
+    font-family: 'Rosario', sans-serif;
+    text-transform: uppercase;
+}
+.responsiveNavContainer{
+
+}
+.responsiveMenu img{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+}
+.responsiveMenu a:hover{
+   cursor: pointer;
+}
+.responsiveMenu{
+    display: none;
+
+}
+@media screen and (max-width: 600px) {
+    .nav ul li{
+        display: none;
+    }
+    .nav ul{
+       padding: 0;
+        margin: 0;
+    }
+    .responsiveMenu{
+        display: block;
+    }
+}
